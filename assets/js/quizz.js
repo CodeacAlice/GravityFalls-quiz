@@ -125,8 +125,7 @@ $('#explNext').click(function() {
 		nbQuest ++;
 		showQuest();
 	}
-	else {$('#modalEnd').modal('show')}
-	
+	else { showEnd(); }
 })
 
 
@@ -140,7 +139,7 @@ $('#btnClue').click(function() {
 
 
 //End
-$('#end').click(function(){
+function showEnd() {
 	$('#score').html(score);
 	$('#scoretot').html(nbQuTotal);
 
@@ -148,6 +147,11 @@ $('#end').click(function(){
 	else if (score > 5) {$('#comment').html(", good job!")}
 	else if (score > 0) {$('#comment').html(", not bad!")}
 	else {$('#comment').html(", well... You know, scores don't really matter.")}
+
+	$('#modalEnd').modal('show')
+}
+$('#end').click(function(){
+	showEnd();
 })
 
 $('#tryAgain').click(function(){
