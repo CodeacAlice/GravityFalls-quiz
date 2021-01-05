@@ -9,7 +9,33 @@ body	{
 }
 
 
-/*Boutons*/
+
+/******* Fonts *******/
+
+@font-face {
+	font-family: MaliBold;
+	src: url('../fonts/Mali/Mali-Bold.ttf');
+}
+
+@font-face {
+	font-family: Niramit;
+	src: url('../fonts/Niramit/Niramit-Regular.ttf');
+}
+@font-face {
+	font-family: PermanentMarker;
+	src: url('../fonts/Permanent_Marker/PermanentMarker-Regular.ttf');
+}
+@font-face {
+	font-family: PT_Sans;
+	src: url('../fonts/PT_Sans/PTSans-Regular.ttf');
+}
+@font-face {
+	font-family: Varela_Round;
+	src: url('../fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
+
+
+/******* Buttons *******/
 .btn	{
 	width: 100%;
 	height: 100%;
@@ -41,7 +67,7 @@ body	{
 }
 
 .answer	{
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'Varela_Round', sans-serif;
 }
 .def	{
 	background-color: #bb845a;
@@ -59,7 +85,7 @@ body	{
 }
 
 
-/* Title */
+/******* Title *******/
 .whiteback	{
 	border-radius: 20px;
 	text-align: center;
@@ -69,29 +95,28 @@ body	{
 	background-color: rgba(255,255,255,0.9);
 }
 h1	{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'PermanentMarker', cursive;
 	color: #690f06;
 }
 
 
-/* Question */
+/******* Question *******/
 #containerQuest	{
 	background-color: rgba(255,255,255,0.7);
 }
 h2	{
-	font-family: 'Mali', cursive;
-	font-weight: bold;
+	font-family: 'MaliBold', cursive;
 	color: #043d1f;
 }
 
 p 	{
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT_Sans', sans-serif;
 }
 
 #question {font-weight: bold;}
 
 
-/* Footer */
+/******* Footer *******/
 footer {
 	background-color: #94814e;
 	color: white;
@@ -107,7 +132,7 @@ footer {
     width: 100%;
 }
 
-/* Modal */
+/******* Modal *******/
 .card	{
 	margin: auto;
 	width: 75%;
@@ -126,7 +151,7 @@ footer {
 }
 
 
-/* Responsive */
+/******* Responsive *******/
 @media screen and (min-width: 621px) {
   .whiteback	{
   	width: 80%;
